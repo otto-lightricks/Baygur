@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19D54A2F2324CFB500B1996B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D54A2E2324CFB500B1996B /* Assets.xcassets */; };
+		19D54A322324CFB500B1996B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D54A302324CFB500B1996B /* LaunchScreen.storyboard */; };
+		19D54B592324E34100B1996B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B582324E34100B1996B /* CoreGraphics.framework */; };
+		19D54B5B2324E34E00B1996B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B5A2324E34E00B1996B /* GLKit.framework */; };
+		19D54B5F2324E37700B1996B /* libcompression.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B5E2324E37700B1996B /* libcompression.tbd */; };
+		19D54B622324E38E00B1996B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B612324E38E00B1996B /* UIKit.framework */; };
+		19D54B642324E3A100B1996B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B632324E3A100B1996B /* QuartzCore.framework */; };
+		19D54B752324E52900B1996B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B582324E34100B1996B /* CoreGraphics.framework */; };
+		19D54B792324E55700B1996B /* libSpectacle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B272324E0D900B1996B /* libSpectacle.a */; };
+		19D54B7A2324E55E00B1996B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D54B612324E38E00B1996B /* UIKit.framework */; };
+		5DCAC6207D7B262B7E73D534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1DD74B1C4D262410127A96 /* AppDelegate.swift */; };
+		850B7FC10D4EEE0F63DE4D7E /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8131C7C9A9FBDBEA5969C79E /* ViewControllerSpec.swift */; };
+		94A5AAE1274395FC007DFCEC /* BGRDummy.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94A5AAE0274395FC007DFCEC /* BGRDummy.mm */; };
+		AD75BC61E908400023C561E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8495E1C32735E748F4C1040 /* ViewController.swift */; };
+		B889177F285883E900936E69 /* HighScoreFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B889177E285883E900936E69 /* HighScoreFetcher.swift */; };
+		B88927EE285F1CAE00936E69 /* UIControl+AddAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88927ED285F1CAE00936E69 /* UIControl+AddAction.swift */; };
+		B8E45A4B2856120800628963 /* libRedux.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E45A462856120000628963 /* libRedux.a */; };
+		E026C91A246822DE129DCC81 /* Dummy.mm in Sources */ = {isa = PBXBuildFile; fileRef = F687D0628F0BFCFC8885BE83 /* Dummy.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19D54A3B2324CFB500B1996B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54A1A2324CFB300B1996B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19D54A212324CFB300B1996B;
+			remoteInfo = Baygur;
+		};
+		19D54B262324E0D900B1996B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54B202324E0D900B1996B /* Spectacle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BC72B4B2292D9AF0007A5AA;
+			remoteInfo = Spectacle;
+		};
+		19D54B282324E0D900B1996B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54B202324E0D900B1996B /* Spectacle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BD03AF52293292F006FE3D8;
+			remoteInfo = SpectacleTests;
+		};
+		19D54B2A2324E0D900B1996B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54B202324E0D900B1996B /* Spectacle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9DEC9622DF4885005EDACF;
+			remoteInfo = SpectacleRandomTests;
+		};
+		1E1073D3E62A8242BC706C12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EAD195C0D6300ED456B;
+			remoteInfo = "Nimble-macOS";
+		};
+		2CBB3F74ABFA08557EFB37D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F5DF1551BDCA0CE00C3A531;
+			remoteInfo = "Nimble-tvOS";
+		};
+		57E4066D6D4929D404C83F90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EB7195C0D6300ED456B;
+			remoteInfo = "Nimble-macOSTests";
+		};
+		724D58415916D53F3A37F73F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74291940169200FFFC47;
+			remoteInfo = "Nimble-iOS";
+		};
+		B4AB5F1F0452CE1D3B8ECDDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F5DF15E1BDCA0CE00C3A531;
+			remoteInfo = "Nimble-tvOSTests";
+		};
+		B8E45A452856120000628963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8E45A3C2856120000628963 /* Redux.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4164A8F24D1AC3C00777E9D;
+			remoteInfo = Redux;
+		};
+		B8E45A472856120000628963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8E45A3C2856120000628963 /* Redux.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4164BE424D1AC7100777E9D;
+			remoteInfo = ReduxTests;
+		};
+		B8E45A492856120000628963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8E45A3C2856120000628963 /* Redux.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E453389924DC44460018050A;
+			remoteInfo = ReduxTestUtils;
+		};
+		C0497CA079C9AD5C5F4C9BEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54B202324E0D900B1996B /* Spectacle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BE3B87F2357595F005FE9DD;
+			remoteInfo = SpectacleTestUtils;
+		};
+		C99BC3890C7B5DE252F2F511 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1A74281940169200FFFC47;
+			remoteInfo = "Nimble-iOS";
+		};
+		CDBC46EC8D4C1BB6EB6F284B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74341940169200FFFC47;
+			remoteInfo = "Nimble-iOSTests";
+		};
+		D5804893563CA7C8DA6DFA49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D54B202324E0D900B1996B /* Spectacle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BE3B85E23575706005FE9DD;
+			remoteInfo = SpectacleFocusedTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		19D54B742324E50100B1996B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		19D54A222324CFB300B1996B /* Baygur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baygur.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D54A2E2324CFB500B1996B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19D54A312324CFB500B1996B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19D54A332324CFB500B1996B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19D54A3A2324CFB500B1996B /* BaygurTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaygurTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D54A402324CFB500B1996B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19D54B052324DCF600B1996B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		19D54B062324DCF600B1996B /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		19D54B072324DCF600B1996B /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Common.xcconfig; path = ../Foundations/Configuration/Common.xcconfig; sourceTree = "<group>"; };
+		19D54B092324DCF600B1996B /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		19D54B0A2324DCF600B1996B /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		19D54B0B2324DCF600B1996B /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		19D54B0C2324DCF600B1996B /* Bundle.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Bundle.xcconfig; sourceTree = "<group>"; };
+		19D54B202324E0D900B1996B /* Spectacle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Spectacle.xcodeproj; path = ../Foundations/Spectacle/Spectacle.xcodeproj; sourceTree = "<group>"; };
+		19D54B582324E34100B1996B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		19D54B5A2324E34E00B1996B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		19D54B5E2324E37700B1996B /* libcompression.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcompression.tbd; path = usr/lib/libcompression.tbd; sourceTree = SDKROOT; };
+		19D54B612324E38E00B1996B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		19D54B632324E3A100B1996B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		19D54B7F2324E6E000B1996B /* Baygur-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Baygur-Prefix.pch"; sourceTree = "<group>"; };
+		7F1DD74B1C4D262410127A96 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8131C7C9A9FBDBEA5969C79E /* ViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
+		94A5AAC5274395FC007DFCEC /* BGRDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRDummy.h; sourceTree = "<group>"; };
+		94A5AAE0274395FC007DFCEC /* BGRDummy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BGRDummy.mm; sourceTree = "<group>"; };
+		94D835E426D6406F00DED494 /* Baygur-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Baygur-Bridging-Header.h"; sourceTree = "<group>"; };
+		94D835FD26D6411900DED494 /* BaygurTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaygurTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		B889177E285883E900936E69 /* HighScoreFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreFetcher.swift; sourceTree = "<group>"; };
+		B88927ED285F1CAE00936E69 /* UIControl+AddAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+AddAction.swift"; sourceTree = "<group>"; };
+		B8E45A3C2856120000628963 /* Redux.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Redux.xcodeproj; path = ../Foundations/Redux/Redux.xcodeproj; sourceTree = "<group>"; };
+		E8495E1C32735E748F4C1040 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = ../Foundations/third_party/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
+		F687D0628F0BFCFC8885BE83 /* Dummy.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Dummy.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19D54A1F2324CFB300B1996B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8E45A4B2856120800628963 /* libRedux.a in Frameworks */,
+				19D54B592324E34100B1996B /* CoreGraphics.framework in Frameworks */,
+				19D54B5B2324E34E00B1996B /* GLKit.framework in Frameworks */,
+				19D54B5F2324E37700B1996B /* libcompression.tbd in Frameworks */,
+				19D54B642324E3A100B1996B /* QuartzCore.framework in Frameworks */,
+				19D54B622324E38E00B1996B /* UIKit.framework in Frameworks */,
+				19D54B5F2324E37700B1996B /* libcompression.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D54A372324CFB500B1996B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D54B752324E52900B1996B /* CoreGraphics.framework in Frameworks */,
+				19D54B792324E55700B1996B /* libSpectacle.a in Frameworks */,
+				19D54B7A2324E55E00B1996B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19D54A192324CFB300B1996B = {
+			isa = PBXGroup;
+			children = (
+				19D54A242324CFB300B1996B /* Baygur */,
+				19D54A3D2324CFB500B1996B /* BaygurTests */,
+				19D54B032324DBE900B1996B /* Configuration */,
+				19D54B0D2324E05800B1996B /* Frameworks */,
+				19D54A232324CFB300B1996B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19D54A232324CFB300B1996B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19D54A222324CFB300B1996B /* Baygur.app */,
+				19D54A3A2324CFB500B1996B /* BaygurTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19D54A242324CFB300B1996B /* Baygur */ = {
+			isa = PBXGroup;
+			children = (
+				7F1DD74B1C4D262410127A96 /* AppDelegate.swift */,
+				B889177E285883E900936E69 /* HighScoreFetcher.swift */,
+				19D54A2E2324CFB500B1996B /* Assets.xcassets */,
+				94D835E426D6406F00DED494 /* Baygur-Bridging-Header.h */,
+				19D54B7F2324E6E000B1996B /* Baygur-Prefix.pch */,
+				94A5AAC5274395FC007DFCEC /* BGRDummy.h */,
+				94A5AAE0274395FC007DFCEC /* BGRDummy.mm */,
+				19D54A332324CFB500B1996B /* Info.plist */,
+				19D54A302324CFB500B1996B /* LaunchScreen.storyboard */,
+				B88927ED285F1CAE00936E69 /* UIControl+AddAction.swift */,
+				E8495E1C32735E748F4C1040 /* ViewController.swift */,
+			);
+			path = Baygur;
+			sourceTree = "<group>";
+		};
+		19D54A3D2324CFB500B1996B /* BaygurTests */ = {
+			isa = PBXGroup;
+			children = (
+				94D835FD26D6411900DED494 /* BaygurTests-Bridging-Header.h */,
+				F687D0628F0BFCFC8885BE83 /* Dummy.mm */,
+				19D54A402324CFB500B1996B /* Info.plist */,
+				8131C7C9A9FBDBEA5969C79E /* ViewControllerSpec.swift */,
+			);
+			path = BaygurTests;
+			sourceTree = "<group>";
+		};
+		19D54B032324DBE900B1996B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				19D54B042324DCF600B1996B /* Configurations */,
+				19D54B082324DCF600B1996B /* Targets */,
+				19D54B072324DCF600B1996B /* Common.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		19D54B042324DCF600B1996B /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				19D54B052324DCF600B1996B /* Debug.xcconfig */,
+				19D54B062324DCF600B1996B /* Release.xcconfig */,
+			);
+			name = Configurations;
+			path = ../Foundations/Configuration/Configurations;
+			sourceTree = "<group>";
+		};
+		19D54B082324DCF600B1996B /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				19D54B0A2324DCF600B1996B /* Application.xcconfig */,
+				19D54B0C2324DCF600B1996B /* Bundle.xcconfig */,
+				19D54B0B2324DCF600B1996B /* Framework.xcconfig */,
+				19D54B092324DCF600B1996B /* StaticLibrary.xcconfig */,
+			);
+			name = Targets;
+			path = ../Foundations/Configuration/Targets;
+			sourceTree = "<group>";
+		};
+		19D54B0D2324E05800B1996B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19D54B582324E34100B1996B /* CoreGraphics.framework */,
+				19D54B5A2324E34E00B1996B /* GLKit.framework */,
+				19D54B5E2324E37700B1996B /* libcompression.tbd */,
+				EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */,
+				19D54B632324E3A100B1996B /* QuartzCore.framework */,
+				B8E45A3C2856120000628963 /* Redux.xcodeproj */,
+				19D54B202324E0D900B1996B /* Spectacle.xcodeproj */,
+				19D54B612324E38E00B1996B /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19D54B212324E0D900B1996B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19D54B272324E0D900B1996B /* libSpectacle.a */,
+				19D54B292324E0D900B1996B /* SpectacleTests.xctest */,
+				CC7A6EE3FA78E00ED12CA8FE /* SpectacleFocusedTests.xctest */,
+				19D54B2B2324E0D900B1996B /* SpectacleRandomTests.xctest */,
+				E07D045715E80417864334BF /* libSpectacleTestUtils.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93510AA10EFB472D466641A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AD119731D74D0FDA56287C2 /* Nimble.framework */,
+				DA336CA1AE6A1664AFB6CAB3 /* NimbleTests.xctest */,
+				2DE87200B2A0651AB2A7DFF1 /* Nimble.framework */,
+				0F5C92EC8B5417A7AFE655B0 /* NimbleTests.xctest */,
+				53EF2E15C6C35096FD26551E /* Nimble.framework */,
+				57C42D2BBA8079630648C698 /* NimbleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8E45A3D2856120000628963 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8E45A462856120000628963 /* libRedux.a */,
+				B8E45A482856120000628963 /* ReduxTests.xctest */,
+				B8E45A4A2856120000628963 /* libReduxTestUtils.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19D54A212324CFB300B1996B /* Baygur */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D54A432324CFB500B1996B /* Build configuration list for PBXNativeTarget "Baygur" */;
+			buildPhases = (
+				94D8382626D65C4100DED494 /* Run SwiftLint */,
+				19D54A1E2324CFB300B1996B /* Sources */,
+				19D54A1F2324CFB300B1996B /* Frameworks */,
+				19D54A202324CFB300B1996B /* Resources */,
+				19D54B742324E50100B1996B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Baygur;
+			productName = Baygur;
+			productReference = 19D54A222324CFB300B1996B /* Baygur.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19D54A392324CFB500B1996B /* BaygurTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D54A462324CFB500B1996B /* Build configuration list for PBXNativeTarget "BaygurTests" */;
+			buildPhases = (
+				94D8382726D65CA900DED494 /* Run SwiftLint */,
+				19D54A362324CFB500B1996B /* Sources */,
+				19D54A372324CFB500B1996B /* Frameworks */,
+				19D54A382324CFB500B1996B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19D54A3C2324CFB500B1996B /* PBXTargetDependency */,
+				FF03D2BD01C2C595E767AD10 /* PBXTargetDependency */,
+			);
+			name = BaygurTests;
+			productName = BaygurTests;
+			productReference = 19D54A3A2324CFB500B1996B /* BaygurTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19D54A1A2324CFB300B1996B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Lightricks;
+				TargetAttributes = {
+					19D54A212324CFB300B1996B = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					19D54A392324CFB500B1996B = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 19D54A212324CFB300B1996B;
+					};
+				};
+			};
+			buildConfigurationList = 19D54A1D2324CFB300B1996B /* Build configuration list for PBXProject "Baygur" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19D54A192324CFB300B1996B;
+			productRefGroup = 19D54A232324CFB300B1996B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 93510AA10EFB472D466641A7 /* Products */;
+					ProjectRef = EE05277BAFE3F3B6B69F4B55 /* Nimble.xcodeproj */;
+				},
+				{
+					ProductGroup = B8E45A3D2856120000628963 /* Products */;
+					ProjectRef = B8E45A3C2856120000628963 /* Redux.xcodeproj */;
+				},
+				{
+					ProductGroup = 19D54B212324E0D900B1996B /* Products */;
+					ProjectRef = 19D54B202324E0D900B1996B /* Spectacle.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				19D54A212324CFB300B1996B /* Baygur */,
+				19D54A392324CFB500B1996B /* BaygurTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0F5C92EC8B5417A7AFE655B0 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = CDBC46EC8D4C1BB6EB6F284B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		19D54B272324E0D900B1996B /* libSpectacle.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSpectacle.a;
+			remoteRef = 19D54B262324E0D900B1996B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		19D54B292324E0D900B1996B /* SpectacleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpectacleTests.xctest;
+			remoteRef = 19D54B282324E0D900B1996B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		19D54B2B2324E0D900B1996B /* SpectacleRandomTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpectacleRandomTests.xctest;
+			remoteRef = 19D54B2A2324E0D900B1996B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DE87200B2A0651AB2A7DFF1 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 724D58415916D53F3A37F73F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		53EF2E15C6C35096FD26551E /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 2CBB3F74ABFA08557EFB37D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		57C42D2BBA8079630648C698 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = B4AB5F1F0452CE1D3B8ECDDF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AD119731D74D0FDA56287C2 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 1E1073D3E62A8242BC706C12 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8E45A462856120000628963 /* libRedux.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRedux.a;
+			remoteRef = B8E45A452856120000628963 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8E45A482856120000628963 /* ReduxTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReduxTests.xctest;
+			remoteRef = B8E45A472856120000628963 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8E45A4A2856120000628963 /* libReduxTestUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReduxTestUtils.a;
+			remoteRef = B8E45A492856120000628963 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CC7A6EE3FA78E00ED12CA8FE /* SpectacleFocusedTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpectacleFocusedTests.xctest;
+			remoteRef = D5804893563CA7C8DA6DFA49 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA336CA1AE6A1664AFB6CAB3 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = 57E4066D6D4929D404C83F90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E07D045715E80417864334BF /* libSpectacleTestUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSpectacleTestUtils.a;
+			remoteRef = C0497CA079C9AD5C5F4C9BEB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19D54A202324CFB300B1996B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D54A2F2324CFB500B1996B /* Assets.xcassets in Resources */,
+				19D54A322324CFB500B1996B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D54A382324CFB500B1996B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94D8382626D65C4100DED494 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../Foundations/Danger/resources/swiftlint --config ../Foundations/.swiftlint.yml\n";
+		};
+		94D8382726D65CA900DED494 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../Foundations/Danger/resources/swiftlint --config ../Foundations/.swiftlint.yml\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19D54A1E2324CFB300B1996B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B88927EE285F1CAE00936E69 /* UIControl+AddAction.swift in Sources */,
+				94A5AAE1274395FC007DFCEC /* BGRDummy.mm in Sources */,
+				AD75BC61E908400023C561E3 /* ViewController.swift in Sources */,
+				5DCAC6207D7B262B7E73D534 /* AppDelegate.swift in Sources */,
+				B889177F285883E900936E69 /* HighScoreFetcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D54A362324CFB500B1996B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E026C91A246822DE129DCC81 /* Dummy.mm in Sources */,
+				850B7FC10D4EEE0F63DE4D7E /* ViewControllerSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19D54A3C2324CFB500B1996B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19D54A212324CFB300B1996B /* Baygur */;
+			targetProxy = 19D54A3B2324CFB500B1996B /* PBXContainerItemProxy */;
+		};
+		FF03D2BD01C2C595E767AD10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			targetProxy = C99BC3890C7B5DE252F2F511 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19D54A302324CFB500B1996B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19D54A312324CFB500B1996B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19D54A412324CFB500B1996B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D54B052324DCF600B1996B /* Debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Foundations/third_party/libextobjc",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19D54A422324CFB500B1996B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D54B062324DCF600B1996B /* Release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Foundations/third_party/libextobjc",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		19D54A442324CFB500B1996B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D54B0A2324DCF600B1996B /* Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG6GWND6BG;
+				GCC_PREFIX_HEADER = "Baygur/Baygur-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Baygur/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightricks.Baygur;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Baygur/Baygur-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		19D54A452324CFB500B1996B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D54B0A2324DCF600B1996B /* Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG6GWND6BG;
+				GCC_PREFIX_HEADER = "Baygur/Baygur-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Baygur/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightricks.Baygur;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Baygur/Baygur-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		19D54A472324CFB500B1996B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D54B0A2324DCF600B1996B /* Application.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG6GWND6BG;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Foundations/Spectacle",
+					"$(SRCROOT)/../Foundations/third_party/Expecta",
+					"$(SRCROOT)/../Foundations/third_party/OCMock/Source",
+				);
+				INFOPLIST_FILE = BaygurTests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightricks.BaygurTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BaygurTests/BaygurTests-Bridging-Header.h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baygur.app/Baygur";
+			};
+			name = Debug;
+		};
+		19D54A482324CFB500B1996B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D54B0A2324DCF600B1996B /* Application.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG6GWND6BG;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Foundations/Spectacle",
+					"$(SRCROOT)/../Foundations/third_party/Expecta",
+					"$(SRCROOT)/../Foundations/third_party/OCMock/Source",
+				);
+				INFOPLIST_FILE = BaygurTests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightricks.BaygurTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BaygurTests/BaygurTests-Bridging-Header.h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baygur.app/Baygur";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19D54A1D2324CFB300B1996B /* Build configuration list for PBXProject "Baygur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D54A412324CFB500B1996B /* Debug */,
+				19D54A422324CFB500B1996B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19D54A432324CFB500B1996B /* Build configuration list for PBXNativeTarget "Baygur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D54A442324CFB500B1996B /* Debug */,
+				19D54A452324CFB500B1996B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19D54A462324CFB500B1996B /* Build configuration list for PBXNativeTarget "BaygurTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D54A472324CFB500B1996B /* Debug */,
+				19D54A482324CFB500B1996B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19D54A1A2324CFB300B1996B /* Project object */;
+}
