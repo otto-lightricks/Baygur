@@ -1,5 +1,6 @@
 // Copyright (c) 2019 Lightricks. All rights reserved.
 // Created by Dekel Avrahami.
 
+#import <LTKit/LTKit-Prefix.pch>
 #import <Masonry/Masonry.h>
 #import <UIKit/UIKit.h>

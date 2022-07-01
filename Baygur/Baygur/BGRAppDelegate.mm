@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)application:(UIApplication __unused *)application
     didFinishLaunchingWithOptions:(nullable NSDictionary __unused *)launchOptions {
+  [self setWindow:[[UIWindow alloc] init]];
+  [self.window setRootViewController:[[BGRViewController alloc] init]];
+  [self.window makeKeyAndVisible];
   return YES;
 }
 
